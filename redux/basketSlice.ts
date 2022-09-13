@@ -1,0 +1,45 @@
+import { createSlice } from "@reduxjs/toolkit";
+import type { PayloadAction } from "@reduxjs/toolkit";
+
+export interface BasketState {
+  items: Product[];
+}
+
+const initialState: BasketState = {
+  items: [],
+};
+
+export const basketReducer = createSlice({
+  name: "basket",
+  initialState,
+  reducers: {
+    addToBasket: (state: BasketState, action: PayloadAction<Product>) => {
+      state.items = [...state.items, action.payload];
+    },
+    removeFromBasket: (
+      state: BasketState,
+      action: PayloadAction<{ id: string }>
+    ) => {
+      const index = state.items.findIndex(
+        (items: Product) => items._id === action.payload.id
+      );
+
+      let newBasket = [...state.items];
+
+      if (index >= 0) {
+        newBasket.splice(index, 1);
+      } else {
+        console.log(
+          `Can't remove product (id: ${action.payload.id}) as it's not in basket!`
+        );
+      }
+
+      state.items = newBasket;
+    },
+  },
+});
+
+// Action creators are generated for each case reducer function
+export const { addToBasket, removeFromBasket } = basketReducer.actions;
+
+export default basketReducer.reducer;
