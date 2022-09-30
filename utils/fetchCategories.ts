@@ -1,6 +1,6 @@
 export const fetchCategories = async () => {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getCategories`
+    `https://ecommerce-app-with-nextjs-typescript-redux-srtipe-sanity.vercel.app/api/getCategories`
   );
 
   const data = await res.json();

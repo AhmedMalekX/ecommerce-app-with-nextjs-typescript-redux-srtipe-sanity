@@ -5,11 +5,12 @@ module.exports = {
     domains: ["rb.gy", "cdn.sanity.io", "lh3.googleusercontent.com"],
   },
   env: {
+    NEXT_PUBLIC_BASE_URL: "http://localhost:3000",
+    NEXTAUTH_URL: "http://localhost:3000",
     NEXT_PUBLIC_SANITY_DATASET: "production",
+    NEXT_PUBLIC_SANITY_PROJECT_ID: "noly6j6f",
     SANITY_API_TOKEN:
       "skqnNnFY39NYEy1MEnReRzVcAq7BAhokSrwAmSFhDLiUbp2ircqBGTiY59jY6W90atfgpWJfFnS6PbNwp5aEC2UwXS10qdWsvLblzy7i21nJpFnqf1asuQvdC8CMRe0uU4QyPY2zeJrIwtvlQrnXj1rpFDgl29vgOubTWty73WHYiqRNzTYa",
-    NEXT_PUBLIC_SANITY_PROJECT_ID: "noly6j6f",
-    NEXT_PUBLIC_BASE_URL: "http://localhost:3000",
     STRIPE_SECRET_KEY:
       "sk_test_51LhchpFcvSks98mXvEHQEiWtMCy4oT02Ffa4W5QUbUjaq13Px12aqVlpWos5E0RNpRacVonX6ehCoAbfkVraGATc00VG96tpua",
     GOOGLE_CLIENT_ID:
