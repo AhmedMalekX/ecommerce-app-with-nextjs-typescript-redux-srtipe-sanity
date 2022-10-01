@@ -59,7 +59,7 @@ export const Header: React.FC = () => {
           </div>
         </Link>
 
-        {session ? (
+        {/* {session ? (
           <Image
             src={
               session.user?.image ||
@@ -73,7 +73,7 @@ export const Header: React.FC = () => {
           />
         ) : (
           <UserIcon className="headerIcon" onClick={() => signIn()} />
-        )}
+        )} */}
       </div>
     </header>
   );

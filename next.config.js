@@ -6,7 +6,7 @@ module.exports = {
   },
   env: {
     NEXT_PUBLIC_BASE_URL: "http://localhost:3000",
-    NEXTAUTH_URL: "http://localhost:3000",
+    // NEXTAUTH_URL: "http://localhost:3000",
     NEXT_PUBLIC_SANITY_DATASET: "production",
     NEXT_PUBLIC_SANITY_PROJECT_ID: "noly6j6f",
     SANITY_API_TOKEN:
@@ -15,7 +15,7 @@ module.exports = {
       "sk_test_51LhchpFcvSks98mXvEHQEiWtMCy4oT02Ffa4W5QUbUjaq13Px12aqVlpWos5E0RNpRacVonX6ehCoAbfkVraGATc00VG96tpua",
     GOOGLE_CLIENT_ID:
       "569650852973-s6lvhqle59d1mceuih96uu795n8egabi.apps.googleusercontent.com",
-    GOOGLE_CLIENT_SECRET: "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",
+    GOOGLE_CLIENT_SECRET: "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",
     NEXTAUTH_SECRET: "v7COYqKpEdnCbd5aISAw9BxjupOLKYCgBVZ2kwusMNs=",
     NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY:
       "pk_test_51LhchpFcvSks98mX1dAB7UbSzGdvHRxOtf4uAnDwGky9wPcEKeVU3b3gu6QMjTnd04dZnX7szyeuOTRcnppJX7oC002FEdRWVR",
